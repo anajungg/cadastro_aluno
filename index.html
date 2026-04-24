@@ -1,127 +1,136 @@
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  </head>
-  <body>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
 
-     <div class="container"></div>
+<body>
 
-     <h3>Cadastro de Aluno</h3>
-     <p>Preencha os dados abaixo para realizar o registro completo do aluno no sistema acadêmico.</p>
 
-        <form action="" id="formulario">
-             <label for="nome"> Nome completo</label>
-            <input type="text" id="nome" placeholder="Nome">
-            <div id="erroNome" class="erro"></div>
 
-            <label for="cpf"> CPF </label>
-            <input type="text" id="cpf" placeholder="Numero">
-            <div id="erroCpf" class="erro"></div>
+    <div class="container text-dark-emphasis borderrounded-3 shadow-lg p-3 mb-5 bg-body-tertiary rounded"
+        style="margin-top:50px">
+        <h3 id="titulo" class="text-center" style="margin-top:30px"> Cadastro de Aluno</h3>
+        <p id="subtitulo" class="text-center"> Preencha os dados abaixo para realizar o registro completo do aluno no
+            sistema acadêmico.</p>
 
-            <label for="idade"> Data de Nascimnto </label>
-            <input type="date" id="data" placeholder="Data">
-            <div id="erroData" class="erro"></div>
+        <form class="row g-3 needs-validation" novalidate>
 
-            <label for="telefone"> Telefone </label>
-            <input type="tel" id="telefone" placeholder="Telefone">
-            <div id="erroTelefone" class="erro"></div>
+            <div class="row">
+                <div class="col">
+                    <label for="nome" class="form-label">Nome Completo</label>
+                    <input type="text" class="form-control" id="nome">
+                    <div class="valid-feedback">
+                    </div>
+                </div>
 
-            <label for="email"> Email </label>
-            <input type="email" id="email" placeholder="Email">
-            <div id="erroEmail" class="erro"></div>
+                <div class="col">
+                    <label for="cpf" class="form-label">CPF</label>
+                    <input type="text" class="form-control" id="cpf">
+                    <div class="valid-feedback">
+                    </div>
+                </div>
+            </div>
 
-            <label for="endereco"> Endereço completo </label>
-           <input type="textarea" id="endereco" placeholder="Endereco">
-           <div id="erroEndereco" class="erro"></div>
+            <div class="row">
+                <div class="col">
+                    <label for="data" class="form-label"> Data de nascimento</label>
+                    <input type="date" class="form-control" id="data">
+                    <div class="valid-feedback">
+                    </div>
+                </div>
 
-            <label for="cidade"> Cidade </label>
-            <input type="text" id="cidade" placeholder="Cidade">
-            <div id="erroCidade" class="erro"></div>
+                <div class="col">
+                    <label for="telefone" class="form-label">Telefone</label>
+                    <input type="text" class="form-control" id="telefone">
+                    <div class="valid-feedback">
+                    </div>
+                </div>
 
-            <label for="estado"> Estado </label>
-            <input type="text" id="estado" placeholder="Estado>
-            <div id="erroEstado" class="erro"></div>
+                <div class="col">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="text" class="form-control" id="email">
+                    <div class="valid-feedback">
+                    </div>
+                </div>
+            </div>
 
-            <label for="estado"> Estado </label>
-            <input type="text" id="estado" placeholder="Estado>
-            <div id="erroEstado" class="erro"></div>
+            <div class="row">
+                <div class="col">
+                    <label for="endereco" class="form-label">Endereço completo</label>
+                    <input type="text" class="form-control" id="endereco" required>
+                    <div class="invalid-feedback"></div>
+                </div>
+            </div>
 
-            <br> <br>
+            <div class="row">
+                <div class="col">
+                    <label for="cidade" class="form-label">Cidade</label>
+                    <input type="text" class="form-control" id="cidade">
+                    <div class="valid-feedback">
+                    </div>
+                </div>
 
-            <label for="Quintal"> Casa ou apartamento? </label>
-            <select id="moradia">
-            <option value="selecione">Selecione</option>
-            <option value="casa">Casa</option>
-            <option value="apartamento">Apartamento</option>
-            </select>
+                <div class="col">
+                    <label for="estado" class="form-label">Estado</label>
+                    <input type="text" class="form-control" id="estado">
+                    <div class="valid-feedback">
+                    </div>
+                </div>
 
-            <br> <br>
+                <div class="col">
+                    <label for="cep" class="form-label">CEP</label>
+                    <input type="text" class="form-control" id="cep">
+                    <div class="valid-feedback">
+                    </div>
+                </div>
+            </div>
 
-            <label for="Quintal"> Possui quintal?</label>
-            <select id="quintal">
-            <option value="selecione">Selecione</option>
-            <option value="sim">Sim</option>
-            <option value="nao">Não</option>
-            </select>
+            <div class="row">
+                <div class="col">
+                    <label for="curso" class="form-label">Curso</label>
+                    <input type="text" class="form-control" id="curso">
+                    <div class="valid-feedback">
+                    </div>
+                </div>
 
-            <br> <br>
+                <div class="col">
+                    <label for="matricula" class="form-label">Matrícula</label>
+                    <input type="text" class="form-control" id="matricula">
+                    <div class="valid-feedback">
+                    </div>
+                </div>
+            </div>
 
-            <label for="possuinte"> Já teve pet antes? </label>
-            <select id="animal">
-            <option value="selecione">Selecione</option>
-            <option value="teve">Sim</option>
-            <option value="naoteve">Não</option>
-            </select>
 
-            <br> <br>
+            <div class="row">
+                <div class="col">
+                    <label for="senha" class="form-label">Senha</label>
+                    <input type="text" class="form-control" id="senha">
+                    <div class="valid-feedback">
+                    </div>
+                </div>
 
-           <label for="horas"> Quantas horas o animal irá ficar sozinho? </label>
-           <input type="number" id="horas" placeholder="Horas">
-           <div id="erroHoras" class="erro"></div>
+                <div class="col">
+                    <label for="senha2" class="form-label">Confirmar Senha</label>
+                    <input type="text" class="form-control" id="senha2">
+                    <div class="valid-feedback">
+                    </div>
+                </div>
+            </div>
 
-           <br> <br>
+            <div class="row mt-3">
+                <button class="btn btn-primary" type="submit">Cadastrar Aluno</button>
+            </div>
+    </div>
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
 
-           <label for="Motivo de adoção"> Motivo da adoção: </label>
-           <input type="textarea" id="motivo" placeholder="Motivo">
-           <div id="erroMotivo" class="erro"></div>
-
-           <br> <br>
-           
-           <label for="condiçoes"> Quais são suas condições? </label>
-            <select id="condiçoes">
-            <option value="selecione">Selecione</option>
-            <option value="sim">boa</option>
-            <option value="razoavel">razoável</option>
-            <option value="ruim">ruim</option>
-            </select>
-
-            <br> <br>
-
-            <label>Quando decidiu adotar?</label>
-            <select id="decisao">
-            <option value="selecione">Selecione</option>
-            <option value="hoje">Hoje</option>
-            <option value="antes">Já vinha pensando</option>
-            </select>
-
-            <br> <br>
-
-            <label>Informação sobre o local:</label>
-            <select id="local">
-            <option value="selecione">Selecione</option>
-            <option value="permite">Permite animais (apartamento)</option>
-            <option value="seguro">Quintal seguro (casa)</option>
-            </select>
-
-            <br> <br>
-
-            <label>Motivo da adoção:</label>
-            <textarea id="motivo" placeholder="Escreva o motivo aqui..."></textarea>
-
-            <br> <br>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-  </body>
 </html>
